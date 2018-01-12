@@ -89,13 +89,13 @@ header {
 }
 
 header h1 {
-  padding: 20px;
+  padding-left: 50px;
   white-space: nowrap
 }
 
 button {
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 </style>
