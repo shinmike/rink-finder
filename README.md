@@ -6,8 +6,8 @@ Created by Michael Shin
 
 ## Final Product
 
-Show blogs
-!["Screenshot of show blogs"](https://github.com/shinmike/rink-finder/blob/master/docs/rinkFinder.png)
+Main page
+!["Screenshot of main page"](https://github.com/shinmike/rink-finder/blob/master/docs/rinkFinder.png)
 
 ## Build Setup
 
