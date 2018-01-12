@@ -36,8 +36,6 @@ export default {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
     background: #f7f8f9;
     overflow-y: scroll;
-    height: 650px;
-    bottom: 0px;
 }
 
 </style>

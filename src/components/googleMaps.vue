@@ -1,10 +1,10 @@
 <template>
-  <div class="google-map fl w-60 pa2" :id="mapName"></div>
+  <div class="google-map fl w-60 pa2" v-bind:id="mapName"></div>
 </template>
 <script>
 export default {
   name: "google-map",
-  props: ["outdoorRinkData", "indoorRinkData"],
+  props: ["outdoorRinkData", "indoorRinkData", "name"],
   data: function() {
     var markerCoordinatesCompiled = [];
 
@@ -77,7 +77,6 @@ export default {
 </script>
 <style scoped>
 .google-map {
-  height: 650px;
   background: gray;
 }
 </style>

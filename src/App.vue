@@ -1,5 +1,5 @@
 <template>
-  <div class="avenir black-80 fl w-100 pa2">
+  <div class="avenir black-80 blah">
     <search></search>
   </div>
 </template>
@@ -18,5 +18,14 @@ export default {
 </script>
 
 <style>
+html, body, .google-map, .sidebar, .search, .blah{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.google-map {
+    position: relative;
+}
 
 </style>

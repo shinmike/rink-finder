@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="search">
     <nav class="dt w-100 border-box ph5-ns shadow-5 bg-green black-70">
       <h1 class="f2">Rink Finder <i class="fa fa-search" aria-hidden="true"></i></h1>
       <div class="dtc v-mid w-75 tr">
@@ -13,8 +13,8 @@
     </nav>
     <indoor-rinks v-bind:indoorRinkData="data" v-if="indoorRinks"></indoor-rinks>
     <outdoor-rinks v-bind:outdoorRinkData="data" v-if="outdoorRinks"></outdoor-rinks>
-    <google-maps v-bind:indoorRinkData="data" v-if="indoorRinks"></google-maps>
-    <google-maps v-bind:outdoorRinkData="data" v-if="outdoorRinks"></google-maps>
+    <google-maps name="example" v-bind:indoorRinkData="data" v-if="indoorRinks"></google-maps>
+    <google-maps name="example" v-bind:outdoorRinkData="data" v-if="outdoorRinks"></google-maps>
   </div>
 </template>
 
