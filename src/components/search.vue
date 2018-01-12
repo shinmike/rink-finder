@@ -1,6 +1,7 @@
 <template>
   <div class="search">
-    <nav class="dt w-100 border-box ph5-ns shadow-5 bg-green black-70">
+    <header class="shadow-3">
+      <nav class="dt w-100 bg-green black-70">
       <h1 class="f2">Rink Finder <i class="fa fa-search" aria-hidden="true"></i></h1>
       <div class="dtc v-mid w-75 tr">
         <form>
@@ -11,6 +12,7 @@
         </form>
       </div>
     </nav>
+    </header>
     <indoor-rinks v-bind:indoorRinkData="data" v-if="indoorRinks"></indoor-rinks>
     <outdoor-rinks v-bind:outdoorRinkData="data" v-if="outdoorRinks"></outdoor-rinks>
     <google-maps name="example" v-bind:indoorRinkData="data" v-if="indoorRinks"></google-maps>
@@ -82,15 +84,18 @@ export default {
 
 <style>
 
-nav{
-  background-color: #fff;
-  border-top: 2px solid #E0E1E1;
-  box-shadow: 0px 3px 5px #b5b5b5;
+header {
   z-index: 9999;
 }
 
+header h1 {
+  padding: 20px;
+  white-space: nowrap
+}
+
 button {
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="google-map fl w-60 pa2" v-bind:id="mapName"></div>
+  <div class="google-map fl w-70 pa2" v-bind:id="mapName"></div>
 </template>
 <script>
 export default {

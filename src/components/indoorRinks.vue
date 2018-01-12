@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar fl w-40 pa2">
+  <div class="sidebar fl w-30 pa2">
     <h2>Indoor Ice Rinks</h2>
       <div v-for="info in indoorRinkData">
         <article class="grow shadow-2 mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
@@ -36,6 +36,10 @@ export default {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
     background: #f7f8f9;
     overflow-y: scroll;
+}
+
+h2 {
+  margin-left: 20px;
 }
 
 </style>
