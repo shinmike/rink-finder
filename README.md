@@ -1,6 +1,13 @@
-# hc-api
+# Rink Finder (A Vue.js project)
 
-> A Vue.js project
+Using API proivded by Hockey Community to show indoor and outdoor hockey rinks around Vancouver.
+
+Created by Michael Shin
+
+## Final Product
+
+Show blogs
+!["Screenshot of show blogs"](https://github.com/shinmike/rink-finder/blob/master/docs/rinkFinder.png)
 
 ## Build Setup
 
