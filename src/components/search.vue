@@ -15,8 +15,7 @@
     </header>
     <indoor-rinks v-bind:indoorRinkData="data" v-if="indoorRinks"></indoor-rinks>
     <outdoor-rinks v-bind:outdoorRinkData="data" v-if="outdoorRinks"></outdoor-rinks>
-    <google-maps name="example" v-bind:indoorRinkData="data" v-if="indoorRinks"></google-maps>
-    <google-maps name="example" v-bind:outdoorRinkData="data" v-if="outdoorRinks"></google-maps>
+    <google-maps v-bind:selected="selected"></google-maps>
   </div>
 </template>
 
@@ -37,21 +36,11 @@ export default {
       categories: ["indoor_rinks", "outdoor_rinks"],
       data: [],
       indoorRinks: true,
-      outdoorRinks: false
+      outdoorRinks: false,
     };
   },
   mounted: function() {
-    let url =
-      "https://api-us.hockey-community.com/v1/explore/locations?category=indoor_rinks&sw=49.1407,-123.0899&ne=49.3261,-122.9310&origin=49.2335,-123.0104";
-    this.$http.get(url).then(
-      function(response) {
-        console.log("SUCCESS", response);
-        this.data = response.data;
-      },
-      function(error) {
-        console.log("ERROR", error);
-      }
-    );
+    this.runData();
   },
 
   methods: {
@@ -72,6 +61,8 @@ export default {
         function(response) {
           console.log("SUCCESS", response);
           this.data = response.data;
+          console.log(this.indoorRinks);
+          console.log(this.outdoorRinks);
         },
         function(error) {
           console.log("ERROR", error);
